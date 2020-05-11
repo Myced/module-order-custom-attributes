@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <block class="Magento\Backend\Block\Template" name="order_custom_attributes" template="Ecomteck_OrderCustomAttributes::order/view/order_custom_attributes.phtml" />
+        <!-- <block class="Magento\Backend\Block\Template" name="order_custom_attributes" template="Ecomteck_OrderCustomAttributes::order/view/order_custom_attributes.phtml" /> -->
+        <referenceBlock name="sales_order_tabs">
+            <action method="addTab">
+                <argument name="name" xsi:type="string">custom_tabs</argument>
+                <argument name="block" xsi:type="string">Ecomteck\OrderCustomAttributes\Block\Adminhtml\OrderEdit\Tab\View</argument>
+            </action>
+        </referenceBlock>
     </body>
 </page>
