@@ -24,11 +24,11 @@
     <type name="Magento\Sales\Block\Adminhtml\Order\View\Info">
         <plugin name="ecomteck_order_custom_attributes_show_order_custom_attributes" type="Ecomteck\OrderCustomAttributes\Plugin\Block\Adminhtml\SalesOrderViewInfo" sortOrder="99999" />
     </type>
-    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
+   <!-- <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
         <arguments>
             <argument name="columns" xsi:type="array">
                 <item name="ecomteck_order_custom_attributes" xsi:type="string">sales_order.ecomteck_order_custom_attributes</item>
             </argument>
         </arguments>
-    </virtualType>
+    </virtualType>-->
 </config>

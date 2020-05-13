@@ -36,4 +36,5 @@
     <type name="Magento\Sales\Api\OrderRepositoryInterface">
         <plugin name="add_ecomteck_order_seller_info" type="Ecomteck\OrderCustomAttributes\Plugin\Sales\Model\OrderGet"/>
     </type>
+
 </config>
