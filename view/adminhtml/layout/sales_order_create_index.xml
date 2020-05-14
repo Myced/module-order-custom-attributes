@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="shipping_method">
+            <block class="Ecomteck\OrderCustomAttributes\Block\Adminhtml\SellerCode"
+                   template="Ecomteck_OrderCustomAttributes::order/create/seller_code.phtml"
+                   name="seller_code" as="seller_code" after="-"/>
+        </referenceBlock>
+    </body>
+</page>

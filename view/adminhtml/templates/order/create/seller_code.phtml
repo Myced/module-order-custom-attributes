@@ -1,0 +1,9 @@
+<?php /** @var \Ecometeck\CustomerOrderAttribute\Block\Adminhtml\SellerCode $block */ ?>
+<div class="admin__field">
+    <label for="gt_code_vendeur" class="admin__field-label"><span><?= __('Code Vendeur') ?></span></label>
+    <div class="admin__field-control">
+        <input class="maximum-length-255 minimum-length-1 validate-length input-text admin__control-text"
+               type="text" name="seller_code" id="gt_code_vendeur"
+               value="<?php echo $block->getSellerCode(); ?>"/>
+    </div>
+</div>
